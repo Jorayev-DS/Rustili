@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 
 load_dotenv()
 
-import llm  # noqa: E402
+from backend import llm # noqa: E402
 from database import Base, SessionLocal, engine, get_db  # noqa: E402
 from models import Conversation, Message, Setting, utcnow  # noqa: E402
 from schemas import (  # noqa: E402
